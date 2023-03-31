@@ -14,3 +14,13 @@ Example: Awesome = Awesome +way = Awesomeway
 
 4. The output file must retain all of the punctuation used in the input text file, including whitespace, quotation marks, periods, and newlines. 
 
+
+
+Coding Requirements:
+1. The code must use the Python argparse Links to an external site. to input the text file. Optionally, also include an argument for the user to name the output file. An example execution would be:
+
+python3 piglatin.py --input data.txt --output data_out.txt
+
+2. The code must include a succinct description of the converter at the top of the file using triple quotes. Put appropriate code comments to promote readability.
+
+3. The code must be modular using two or more functions. 
