@@ -1,0 +1,23 @@
+Write a Python script that reads lines of MIPS assembly code from a file (with specific formatting constraints, detailed below)  and writes the corresponding MIPS machine code for those instructions to an output file.  
+The input file should be passed as a command line argument to the Python script using Python argparse 
+
+The input file may contain instructions in the following types:
+
+R type - add, sub, sll, srl, slt
+I-Type - addi, beq, bne, lw, sw
+J type: Not needed in this project!
+
+Formatting Constraints
+The input file contains a single instruction per line, with the opcode in lowercase characters followed by whitespace (a single space character, or any combination of whitespace characters, or tabs), followed by the arguments. 
+The arguments are separated by commas without any whitespace between them. 
+The registers are specified using either a dollar sign followed by a number between 0 and 31 (e.g. $3) or using a dollar sign followed by an alias (e.g. $v1). 
+The immediate values are in decimal form only. The immediate values may be negative so make sure to convert them to two's complement. 
+The end of a line is denoted with a Unix-style line ending (\n) and any further leading or trailing whitespace from each line should be ignored.
+If an invalid input line (not conforming to the formatting constraints and/or instruction not in this assignment) is encountered, append !!! Invalid Input !!!\n to the output file exactly as it is written, with no leading or trailing spaces, close the output file, and terminate program execution gracefully.
+
+
+Requirements
+The code must use Python argparse Links to an external site. to input the text file.
+The code must include a succinct description of the converter at the top of the file using triple quotes. Put appropriate code comments to promote readability.
+The code must be modular using two or more functions. 
+
