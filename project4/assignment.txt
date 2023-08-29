@@ -1,0 +1,19 @@
+In this assignment, you will be simulating the first (alpha) implementation of a single-cycle MIPS datapath, following the structure depicted in Figure 7 in Processor Figures.  
+The program should first parse the machine-language input file (specified by the first positional argument to the program)  before simulating the instructions as in the diagram and writing the required outputs to files. 
+
+Input Format:
+The input file contains lines of 32 ASCII ones or zeros, as would be created by the program from Project 3. Each line is a single machine-language encoded instruction to be executed by the single-cycle datapath.
+For the alpha implementation, we consider these valid instructions only: add, sub, and addi. Additionally, we will only work with registers 0 to 7.
+
+Output Format:
+For a given execution, two files should be created and written by the program:
+
+File 1: out_control.txt. 
+This file contains 10 bits specifying the control signals for each clock cycle, in the order in which they are shown below.  
+Each line in the input file should produce a corresponding line in this file.
+
+File 2: out_registers.txt. 
+This file contains the value of the program counter (in decimal), followed by the decimal values of the first seven registers (0-7) for each clock cycle. 
+The decimal values must be separated with a pipe symbol (|) . Specifically, each line should look something like this:
+<pc val>|<reg 0 val>|<reg 1 val>,..<reg 7 val>\n
+
